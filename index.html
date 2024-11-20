@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the creative world of Sserwadda Remmy's art. From testimonials to blogs, be inspired through his artistic journey.">
+    <meta name="keywords" content="Sserwadda Remmy, Art, Gallery, Creativity, Painting">
+    <meta name="author" content="Sserwadda Remmy">
+    <title>Sserwadda Remmy Art Website</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Accessibility Improvements -->
+    <style>
+        :focus {
+            outline: 3px solid #00ff00;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            clip: rect(0, 0, 0, 0);
+            overflow: hidden;
+        }
+
+        /* Loading animation */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* SVG Animation */
+        .animated-icon svg path {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: draw 2s linear forwards;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* Micro-interactions */
+        button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <p>Loading Sserwadda Remmy Art...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Section -->
+    <header id="home" class="landing">
+        <div id="particle-background"></div>
+        <div class="landing-content">
+            <h1 id="dynamic-title" aria-label="Remmy Inspires You Through Art">Remmy Inspires You Through Art</h1>
+            <p>Explore creativity like never before.</p>
+            <a href="gallery.html" class="button">View Gallery</a>
+            <div class="animated-icon">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <path d="M10 80 C40 10, 60 10, 90 80" stroke="white" fill="none" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial glass-effect morphism">
+            <p>"Remmy's art changed how I see creativity. Absolutely inspiring!"</p>
+            <span>- ERIYA DRAKE</span>
+        </div>
+        <div class="testimonial glass-effect morphism">
+            <p>"The gallery is stunning. A must-see for art lovers."</p>
+            <span>- ABDUL LATEEF</span>
+        </div>
+      <div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="400">
+    <p>"Every visit to the gallery feels like a new adventure into the world of art. Truly captivating!"</p>
+    <span>- ALAN CARTEL</span>
+</div>
+
+<div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="500">
+    <p>"Remmy's work has a unique ability to speak directly to your emotions. It's a must-see!"</p>
+    <span>- JAMES KAKANDE</span>
+</div>
+
+<div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="600">
+    <p>"Art in its purest form! Remmy’s creativity is inspiring and thought-provoking."</p>
+    <span>- FIK FAMEICA</span>
+</div>
+
+<div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="700">
+    <p>"The depth and emotion captured in Remmy's artwork are unparalleled. It leaves a lasting impression!"</p>
+    <span>-BALTAZAR EBANG ENGONGA</span>
+</div>
+
+<div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="800">
+    <p>"A place where art and culture come together in harmony. Remmy’s gallery is a beautiful experience!"</p>
+    <span>- AYRA STARR</span>
+</div>
+
+<div class="testimonial glass-effect morphism" data-aos="zoom-in" data-aos-delay="900">
+    <p>"If you're looking for inspiration, Remmy's art will take you to new heights of creativity."</p>
+    <span>- KIM KARDASHIAN</span>
+</div>
+
+    </section>
+     <section id="blog" class="blog-section" data-aos="fade-up">
+    <h2>Our Blog</h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post glass-effect morphism" data-aos="zoom-in" data-aos-delay="100">
+            <img src="y.jpg" alt="The Journey of Art" class="blog-image">
+            <div class="blog-content">
+                <h3>The Journey of Art</h3>
+                <p>Discover how art can transform lives through creativity and expression...</p>
+                <a href="blog.html" class="read-more hover-effect">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post glass-effect morphism" data-aos="zoom-in" data-aos-delay="200">
+            <img src="z.jpg" alt="Mastering Painting" class="blog-image">
+            <div class="blog-content">
+                <h3>Mastering Painting</h3>
+                <p>Learn the secrets and techniques to elevate your painting skills...</p>
+                <a href="Master.html" class="read-more hover-effect">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-right">
+        <h2>Contact Us</h2>
+        <form action="mailto:sserwaddaremmy@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+            <textarea name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+     <!-- Social Media Icons -->
+    <div class="social-media-icons">
+        <a href="https://facebook.com/RemmySserwadda" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/SserwaddaRemmy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@remmysserwadda" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/256754578242" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com/remmymartin122" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Conceptual Art World. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        // Initialize animations
+        AOS.init();
+
+        // Loading screen
+        window.onload = () => {
+            document.getElementById('loading').style.display = 'none';
+        };
+
+        // Particles.js setup
+        particlesJS("particle-background", {
+            particles: {
+                number: { value: 100, density: { enable: true, value_area: 800 } },
+                color: { value: "#00ff00" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>
